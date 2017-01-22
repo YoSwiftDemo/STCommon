@@ -83,6 +83,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EE8D4151E31C24E0061902B /* STCommonTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = STCommonTool;
+			sourceTree = "<group>";
+		};
+		9EE8D4161E31C2600061902B /* STCommonUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = STCommonUI;
+			sourceTree = "<group>";
+		};
+		9EE8D4171E31C2D00061902B /* STCategory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = STCategory;
+			sourceTree = "<group>";
+		};
+		9EE8D4181E31C3540061902B /* STHud */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = STHud;
+			sourceTree = "<group>";
+		};
 		C136B4801E31BC1300D0D6BB = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +136,10 @@
 		C136B48B1E31BC1400D0D6BB /* STCommon */ = {
 			isa = PBXGroup;
 			children = (
+				9EE8D4181E31C3540061902B /* STHud */,
+				9EE8D4171E31C2D00061902B /* STCategory */,
+				9EE8D4161E31C2600061902B /* STCommonUI */,
+				9EE8D4151E31C24E0061902B /* STCommonTool */,
 				C136B48F1E31BC1400D0D6BB /* AppDelegate.h */,
 				C136B4901E31BC1400D0D6BB /* AppDelegate.m */,
 				C136B4921E31BC1400D0D6BB /* ViewController.h */,
