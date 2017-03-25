@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STMusicSENavView">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音效调节" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmi-TA-8tB">
+                    <rect key="frame" x="52" y="16" width="302" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ByI-Vu-JBC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgW-wk-y8d">
+                    <rect key="frame" x="362" y="0.0" width="44" height="52"/>
+                    <color key="backgroundColor" red="0.11616614190000001" green="1" blue="0.079239280499999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="apZ-kQ-lQm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="musicSECloseClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="DFE-Ro-fcJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hua-Xz-t7c">
+                    <rect key="frame" x="0.0" y="52" width="406" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.21324382980000001" blue="0.1709883458" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ukO-ae-YkB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsG-DI-XV5">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="52"/>
+                    <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="C1S-ln-Sbn"/>
+                    </constraints>
+                    <connections>
+                        <action selector="musicSEResumeClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="m2t-Hv-cgz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hua-Xz-t7c" secondAttribute="bottom" id="36y-KN-di2"/>
+                <constraint firstItem="tsG-DI-XV5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7rk-7b-Lre"/>
+                <constraint firstItem="FgW-wk-y8d" firstAttribute="leading" secondItem="hmi-TA-8tB" secondAttribute="trailing" constant="8" id="9SJ-dL-NL4"/>
+                <constraint firstItem="tsG-DI-XV5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MSV-om-bai"/>
+                <constraint firstItem="hua-Xz-t7c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PCk-q0-squ"/>
+                <constraint firstItem="hmi-TA-8tB" firstAttribute="leading" secondItem="tsG-DI-XV5" secondAttribute="trailing" constant="8" id="Pc5-qn-6VQ"/>
+                <constraint firstAttribute="trailing" secondItem="hua-Xz-t7c" secondAttribute="trailing" id="Q3I-hA-9pw"/>
+                <constraint firstAttribute="trailing" secondItem="FgW-wk-y8d" secondAttribute="trailing" id="Ye1-o3-Sb3"/>
+                <constraint firstItem="hua-Xz-t7c" firstAttribute="top" secondItem="FgW-wk-y8d" secondAttribute="bottom" id="bM9-rZ-8u7"/>
+                <constraint firstItem="FgW-wk-y8d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eu7-fm-cZ8"/>
+                <constraint firstItem="hmi-TA-8tB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qla-CM-aoT"/>
+                <constraint firstItem="hua-Xz-t7c" firstAttribute="top" secondItem="tsG-DI-XV5" secondAttribute="bottom" id="yt1-Zl-IOy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="msuicSECloseBtn" destination="FgW-wk-y8d" id="DHJ-hB-Eh7"/>
+                <outlet property="musicSEResumeBtn" destination="tsG-DI-XV5" id="uwm-uR-f5j"/>
+                <outlet property="musicSETitleLab" destination="hmi-TA-8tB" id="CzV-2q-wRQ"/>
+                <outlet property="sparatorLab" destination="hua-Xz-t7c" id="Rgb-Jb-P5U"/>
+            </connections>
+            <point key="canvasLocation" x="-308" y="25.5"/>
+        </view>
+    </objects>
+</document>
