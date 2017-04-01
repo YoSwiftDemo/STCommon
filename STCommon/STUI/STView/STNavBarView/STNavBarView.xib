@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STNavBarView">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zZ-OE-Qnv">
+                    <rect key="frame" x="0.0" y="63" width="459" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jYp-9y-o0s"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbU-id-JN6">
+                    <rect key="frame" x="8" y="18" width="45" height="45"/>
+                    <color key="backgroundColor" red="0.19923328849999999" green="1" blue="0.93409147240000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="09B-q2-FjB"/>
+                        <constraint firstAttribute="height" constant="45" id="QL3-GX-mqy"/>
+                    </constraints>
+                    <state key="normal" title="L"/>
+                    <connections>
+                        <action selector="leftBtnEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="Lxz-ds-5OS"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKY-yu-WvF">
+                    <rect key="frame" x="406" y="18" width="45" height="45"/>
+                    <color key="backgroundColor" red="0.19923328849999999" green="1" blue="0.93409147240000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="Wc0-6Y-pCe"/>
+                        <constraint firstAttribute="height" constant="45" id="kD0-cb-sIM"/>
+                    </constraints>
+                    <state key="normal" title="R"/>
+                    <connections>
+                        <action selector="rightBtnEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="WO3-mR-tN4"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHc-8j-BOx">
+                    <rect key="frame" x="213" y="21.5" width="33.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2zZ-OE-Qnv" firstAttribute="top" secondItem="hKY-yu-WvF" secondAttribute="bottom" id="2BP-I8-0wB"/>
+                <constraint firstItem="zbU-id-JN6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="8PB-LY-v9b"/>
+                <constraint firstAttribute="trailing" secondItem="hKY-yu-WvF" secondAttribute="trailing" constant="8" id="COV-cm-TLL"/>
+                <constraint firstAttribute="bottom" secondItem="2zZ-OE-Qnv" secondAttribute="bottom" id="Gfg-Is-s6i"/>
+                <constraint firstAttribute="trailing" secondItem="2zZ-OE-Qnv" secondAttribute="trailing" id="IIq-j6-Gd9"/>
+                <constraint firstItem="2zZ-OE-Qnv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ich-5b-fFL"/>
+                <constraint firstItem="LHc-8j-BOx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="woN-CR-DOH"/>
+                <constraint firstItem="LHc-8j-BOx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yi2-8I-ZgJ"/>
+                <constraint firstItem="2zZ-OE-Qnv" firstAttribute="top" secondItem="zbU-id-JN6" secondAttribute="bottom" id="zW1-8S-tbS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBtn" destination="zbU-id-JN6" id="yNe-2n-MMa"/>
+                <outlet property="rightBtn" destination="hKY-yu-WvF" id="CHt-pE-MMq"/>
+                <outlet property="separatorView" destination="2zZ-OE-Qnv" id="ZEf-ff-oyd"/>
+                <outlet property="titleLab" destination="LHc-8j-BOx" id="Xmo-2z-RvJ"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="-181"/>
+        </view>
+    </objects>
+</document>

@@ -11,6 +11,9 @@
 		9EF0B3701E65CF54008049D0 /* STLrcLab.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF0B36B1E65CF54008049D0 /* STLrcLab.m */; };
 		9EF0B3711E65CF54008049D0 /* STMusicSENavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF0B36E1E65CF54008049D0 /* STMusicSENavView.m */; };
 		9EF0B3721E65CF54008049D0 /* STMusicSENavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EF0B36F1E65CF54008049D0 /* STMusicSENavView.xib */; };
+		9EFF022E1E8D239F0024A5AD /* STBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF022D1E8D239F0024A5AD /* STBaseView.m */; };
+		9EFF023A1E8D364E0024A5AD /* STNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF02381E8D364E0024A5AD /* STNavBarView.m */; };
+		9EFF023B1E8D364E0024A5AD /* STNavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF02391E8D364E0024A5AD /* STNavBarView.xib */; };
 		C136B48E1E31BC1400D0D6BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C136B48D1E31BC1400D0D6BB /* main.m */; };
 		C136B4911E31BC1400D0D6BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C136B4901E31BC1400D0D6BB /* AppDelegate.m */; };
 		C136B4941E31BC1400D0D6BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C136B4931E31BC1400D0D6BB /* ViewController.m */; };
@@ -46,6 +49,11 @@
 		9EF0B36D1E65CF54008049D0 /* STMusicSENavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMusicSENavView.h; sourceTree = "<group>"; };
 		9EF0B36E1E65CF54008049D0 /* STMusicSENavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMusicSENavView.m; sourceTree = "<group>"; };
 		9EF0B36F1E65CF54008049D0 /* STMusicSENavView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMusicSENavView.xib; sourceTree = "<group>"; };
+		9EFF022C1E8D239F0024A5AD /* STBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBaseView.h; sourceTree = "<group>"; };
+		9EFF022D1E8D239F0024A5AD /* STBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBaseView.m; sourceTree = "<group>"; };
+		9EFF02371E8D364E0024A5AD /* STNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNavBarView.h; sourceTree = "<group>"; };
+		9EFF02381E8D364E0024A5AD /* STNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNavBarView.m; sourceTree = "<group>"; };
+		9EFF02391E8D364E0024A5AD /* STNavBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STNavBarView.xib; sourceTree = "<group>"; };
 		C136B4891E31BC1400D0D6BB /* STCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C136B48D1E31BC1400D0D6BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C136B48F1E31BC1400D0D6BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +123,8 @@
 		9EF0B3671E65CF54008049D0 /* STUI */ = {
 			isa = PBXGroup;
 			children = (
+				9EFF022F1E8D23BA0024A5AD /* STView */,
+				9EFF022A1E8D23910024A5AD /* STBase */,
 				9EF0B3681E65CF54008049D0 /* STUIMusic */,
 			);
 			path = STUI;
@@ -146,6 +156,41 @@
 				9EF0B36F1E65CF54008049D0 /* STMusicSENavView.xib */,
 			);
 			path = STMusicSENavView;
+			sourceTree = "<group>";
+		};
+		9EFF022A1E8D23910024A5AD /* STBase */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF022B1E8D239F0024A5AD /* STBaseView */,
+			);
+			path = STBase;
+			sourceTree = "<group>";
+		};
+		9EFF022B1E8D239F0024A5AD /* STBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF022C1E8D239F0024A5AD /* STBaseView.h */,
+				9EFF022D1E8D239F0024A5AD /* STBaseView.m */,
+			);
+			path = STBaseView;
+			sourceTree = "<group>";
+		};
+		9EFF022F1E8D23BA0024A5AD /* STView */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF02361E8D364E0024A5AD /* STNavBarView */,
+			);
+			path = STView;
+			sourceTree = "<group>";
+		};
+		9EFF02361E8D364E0024A5AD /* STNavBarView */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF02371E8D364E0024A5AD /* STNavBarView.h */,
+				9EFF02381E8D364E0024A5AD /* STNavBarView.m */,
+				9EFF02391E8D364E0024A5AD /* STNavBarView.xib */,
+			);
+			path = STNavBarView;
 			sourceTree = "<group>";
 		};
 		C136B4801E31BC1300D0D6BB = {
@@ -345,6 +390,7 @@
 			files = (
 				C136B49C1E31BC1400D0D6BB /* LaunchScreen.storyboard in Resources */,
 				9EF0B3721E65CF54008049D0 /* STMusicSENavView.xib in Resources */,
+				9EFF023B1E8D364E0024A5AD /* STNavBarView.xib in Resources */,
 				C136B4991E31BC1400D0D6BB /* Assets.xcassets in Resources */,
 				C136B4971E31BC1400D0D6BB /* Main.storyboard in Resources */,
 			);
@@ -423,6 +469,8 @@
 				9EF0B3701E65CF54008049D0 /* STLrcLab.m in Sources */,
 				C136B4941E31BC1400D0D6BB /* ViewController.m in Sources */,
 				C136B4911E31BC1400D0D6BB /* AppDelegate.m in Sources */,
+				9EFF023A1E8D364E0024A5AD /* STNavBarView.m in Sources */,
+				9EFF022E1E8D239F0024A5AD /* STBaseView.m in Sources */,
 				C136B48E1E31BC1400D0D6BB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
